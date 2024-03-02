@@ -12,7 +12,8 @@ class WeatherApi {
       final response = await http.get(Uri.parse(url));
       if(response.statusCode == 200){
         var data = jsonDecode(response.body);
-        WeatherModel weatherModel = WeatherModel.fromMap(data);
+        // print(data);
+        WeatherModel weatherModel = WeatherModel.fromJson(data);
         return Left(weatherModel);
       }
       else{
@@ -21,6 +22,7 @@ class WeatherApi {
       }
     }
     catch(e){
+      print(e.toString());
       return const Right(FetchError.NetworkError());
     }
   }

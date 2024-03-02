@@ -19,15 +19,15 @@ class SearchField extends StatelessWidget {
         style: const TextStyle(color: Colors.white),
         controller: Controller,
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.search, color: Colors.white,),
+          prefixIcon: const Icon(Icons.search, color: Colors.white,),
           hintText: 'Search',
-          hintStyle: TextStyle(color: Colors.white),
+          hintStyle: const TextStyle(color: Colors.white),
           focusedBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Colors.white),
+            borderSide: const BorderSide(color: Colors.white),
             borderRadius: BorderRadius.circular(25)
           ),
           enabledBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Colors.white),
+            borderSide: const BorderSide(color: Colors.white),
             borderRadius: BorderRadius.circular(25)
           ),
         ),
